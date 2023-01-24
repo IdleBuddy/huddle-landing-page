@@ -35,8 +35,7 @@ screenshot of mobile (390px)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://huddle-landing-page-theta-ebon.vercel.app/)
 
 ## My process
 
