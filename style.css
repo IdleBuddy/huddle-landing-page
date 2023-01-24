@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+main {
+    margin: auto;
+    max-width: 90%;
+    width: 1280px;
+}
+
+.logo {
+    margin-bottom: 75px;
+}
+
+.logo > img {
+    width: 15%;
+}
+
+.flex {
+    display: flex;
+    gap: 40px;
+}
+
+
+.hero {
+    align-self: center;
+    flex: 0.6;
+}
+
+.hero > img {
+    width: 100%;
+}
+
+.header {
+    flex: 0.4;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin: 40px 0px;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 28px;
+    font-weight: 400;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    font-family: 'Poppins', san-serif;
+    font-size: 1.1em;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 5px 5px hsla(0, 0%, 17%, 0.4);
+    background-color: white;
+    transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+button:active {
+    color: white;
+    background-color: hsl(300, 38%, 54%);
+    box-shadow: 0px 5px 5px inset hsl(300, 33%, 40%);
+    transform: translateY(5px);
+}
+
+.socials {
+    text-align: right;
+}
+
+.icon {
+    margin: 0px 5px;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    font-size: 1.2em;
+    transition: color 0.1s linear, border 0.1s linear;
+}
+
+.icon:hover {
+    cursor: pointer;
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    transition: color 0.1s linear, border 0.1s linear;
+}
+
+.icon:active {
+    color: hsl(300, 38%, 54%);
+    border: 1px solid hsl(300, 38%, 54%);
+}
+
+
+@media screen and (max-width: 810px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: 100%;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .logo > img {
+        width: 40%;
+    }
+
+    .flex {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .header {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+
+    p {
+        font-size: .9em;
+    }
+
+    button {
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 1em;
+        height: 35px;
+        width: 35px;
+        padding: 8px;
+    }
+}
